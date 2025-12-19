@@ -7,7 +7,7 @@ binance testnet/sandbox mode is not supported for futures anymore, please check 
 ### Why Does This Happen?
 1. **Binance deprecated their old Testnet** and moved to a new "Demo Trading" system
 2. **CCXT's `set_sandbox_mode(True)`** still points to the old URLs and throws this error
-3. **The API keys you generate on Binance Demo** (`testnet.binancefuture.com`) are valid
+3. **The API keys you generate on Binance Demo** (`demo.binance.com/en/futures/`) are valid
 4. **But CCXT blocks the request** before it even reaches Binance
 ### What Methods Are Affected?
 | Method | Status | Error |
