@@ -7,7 +7,7 @@ binance testnet/sandbox mode is not supported for futures anymore, please check 
 ### Why Does This Happen?
 1. **Binance deprecated their old Testnet** and moved to a new "Demo Trading" system
 2. **CCXT's `set_sandbox_mode(True)`** still points to the old URLs and throws this error
-3. **The API keys you generate on Binance Demo** (`demo.binance.com/en/futures/`) are valid
+3. **The API keys you generate on Binance Demo** (`demo.binance.com/en/futures/`) are valid  (1. Log in to your KYC-verified Binance.com account. a. Go to Switch to demo mode on your Binance.com account. b. Get your API key from https://demo.binance.com/en/futures
 4. **But CCXT blocks the request** before it even reaches Binance
 ### What Methods Are Affected?
 | Method | Status | Error |
@@ -25,7 +25,7 @@ We bypass CCXT's internal checks by **replacing the problematic methods** with o
 ---
 ## 📋 Step-by-Step Implementation
 ### Step 1: Get Your Binance Demo API Keys
-1. Log in to your KYC-verified Binance.com account. a.Go to Switch to demo mode on your Binance.com account. b. Get your API key from https://demo.binance.com/en/futures
+1. Log in to your KYC-verified Binance.com account. a. Go to Switch to demo mode on your Binance.com account. b. Get your API key from https://demo.binance.com/en/futures
 2. Login with your Binance account
 3. Go to **API Management** → Create new API key
 4. Copy your **API Key** and **Secret Key**
