@@ -25,7 +25,7 @@ We bypass CCXT's internal checks by **replacing the problematic methods** with o
 ---
 ## 📋 Step-by-Step Implementation
 ### Step 1: Get Your Binance Demo API Keys
-1. Go to [https://testnet.binancefuture.com/](https://testnet.binancefuture.com/)
+1. Log in to your KYC-verified Binance.com account. a.Go to Switch to demo mode on your Binance.com account. b. Get your API key from https://demo.binance.com/en/futures
 2. Login with your Binance account
 3. Go to **API Management** → Create new API key
 4. Copy your **API Key** and **Secret Key**
